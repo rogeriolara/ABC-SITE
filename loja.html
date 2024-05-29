@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>ABC - Loja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" href="imagens/abc-logo.png">
+
+    <style type="text/css">
+        .marcador {
+            background: #fe9d9d;
+            border: 1px solid #f94646;
+            height: 180px;
+        }
+
+        .marcador-container {
+            background: #5bf946;
+            border: 1px solid #36ae26;
+        }
+
+        /* Adicione esta regra CSS para definir a margem superior */
+        .conteudo {
+            margin-top: 70px; /* Ajuste conforme necessário para o tamanho do seu menu */
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-primary">
+        <!--Logo-->
+        <img class="mr-5" align="left" width="80px" src="imagens/abc-logo.png"><h1 class="text-white">ABC-SP</h1>
+
+        <!-- Menu Hamburguer -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--Navegação-->
+        <div class="collapse navbar-collapse" id="navegacao">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-2">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="historia.html" class="nav-link">História</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="jogadores.html" class="nav-link">Jogadores</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="estatisticas.html" class="nav-link">Estatísticas</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="fotos.html" class="nav-link">Fotos</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="loja.html" class="nav-link">Loja</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a href="sejasocio.html" class="nav-link">Seja Sócio</a>
+                </li>
+            </ul>
+
+            <!-- Formulário -->
+            <form class="form-inline">
+                <input type="text" class="form-control" placeholder="Pesquisar...">
+                <button class="btn btn-success bg-dark">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid marcador-container">
+
+        <h2>Largura Fixa</h2>
+        <div class="row conteudo">
+        	<div class="marcador col-sm-3">área 1622222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222ascbideveuvguiewuieuibfiebivbweiufbeibiwebvuiebuiebvibeibvuiebvuibuievbvibeibiebibeuibfuiebuiebuivbeiwbvuiebvibewivbeibviewbiewogeifbiwbfuiwefuieBFIUEWBFIUEgi</div>
+        	<div class="marcador col-sm-3">área 2</div>
+        	<div class="marcador col-sm-3">área 3</div>
+        	<div class="marcador col-sm-3">área 4</div>
+        </div>
+
+        <h2>Offset</h2>
+        <div class="row">
+        	<div class="marcador col-md-2 offset-md-5">Login</div>
+    </div>
+
+        <h2>Com espaçamento</h2>
+        <div class="row justify-content-center">
+        	 <div class="marcador col-md-5">Conteudo 10 </div>
+        	 <div class="marcador col-md-5 offset-md-1">Conteudo 11	</div>
+        	</div>
+       
+        <h2>Aninhamento</h2>
+      <div class="row">
+        <div class="col-md-6" style="border: 1px solid blue">
+          <div class="row">
+            <div class="col-md-9 marcador">Conteúdo 1</div>
+            <div class="col-md-3 marcador">Conteúdo 2</div>
+          </div>
+        </div>
+
+        <h2>Distribuição (justify-content-ALINHAMENTO: around, between, end)</h2>
+      <div class="row justify-content-between">
+        <div class="marcador col-2">Área 1</div>
+        <div class="marcador col-2">Área 2</div>
+        <div class="marcador col-2">Área 3</div>
+      </div>
+
+      
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

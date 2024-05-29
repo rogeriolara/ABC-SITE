@@ -1,0 +1,355 @@
+/*Limpar formatações padrão */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1em;
+	font-family: "Arial", sans-serif;
+	background: #e6e6e6;
+}
+
+/* layout */
+
+#area-logo {
+
+}
+#area-cabecalho {
+	background-image: linear-gradient(0, #91a7ff 0, #3c78f2 50%, #004ecd 100%);
+	padding: 1px;
+	text-align: center;
+	padding-top: 50px;
+
+}
+
+
+#area-menu {
+	background-image: linear-gradient(180deg, #b2eaff 0, #5389f2 50%, #003265 100%);
+	/*background: #159cb0 url(imagens/fundo-menu-horizontal.png) repeat-x;*/
+	padding: 12px;
+	
+}
+
+
+/* layout tres colunas */
+
+#conteudo {
+	margin-top: 100px;
+	background: #f5f5f5; 
+}
+
+
+#lateral {
+	width: 180px;
+	float: left;
+	margin: 0 0 20px -750px;
+}
+
+#primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px;
+}
+
+.duas-colunas #primario {
+	width: 555px;
+}
+
+.uma-coluna #primario {
+     width: 750px;
+     margin: 0 0 20px 0;
+}
+
+#secundario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}
+
+/*caixa */
+
+.caixa {
+	margin: 10px 0;
+	padding: 5px 0 5px 0;
+	background: #f3f3f3 url(../imagens/fundo-caixa.png);
+}
+
+h2 {
+	font-size: 1.1em;
+	background: #294c71;
+	color: #fff;
+	padding: 5px;
+}
+
+.caixa-conteudo {
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+
+/* menu lateral */
+
+#lateral ul a {
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+
+/* Formatando formulários
+*/
+label {
+	display: block; 
+	cursor: pointer;
+}
+
+input {
+	padding: 5px;
+	width: 125px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+input.submit {
+	width: 80px;
+	color: #fff;
+	background-color: #b10333;
+	border: 2px solid #870529;
+}
+
+/*Formatando imagens*/
+img.imagem-principal {
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/* Formatando cabeçalhos */
+h3 {
+	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
+}
+
+.destaque h3 {
+	background: #b10333;
+	color: #fff;
+}
+
+.entrevista h3 {
+	background: #de003e;
+}
+
+/*Formatando lista de notícias*/
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc; 
+	height: 62px;
+}
+
+#lista-noticias li a img {
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a {
+	text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#lista-noticias li a p {
+	font-size: 0.7em;
+	color: #000;
+}
+
+#lista-noticias li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+
+#rodape {
+	clear: both; /*rodape abaixo do menu lateral */
+	text-align: center;
+	padding: 15px;
+	background: #CCC;
+}
+
+
+/* formatação menu */
+a {
+	text-decoration: none;
+}
+
+/* formatação links gerais */
+a:link, a:visited {
+	color: #F7b600;
+}
+
+a:hover {
+	text-decoration: underline;
+	background-color: blue;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+#area-menu:hover {
+	background-color: green;
+}
+
+/* formatação link especifico cabeçalho */
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+	color: #FFF;
+	padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+	color: blue;
+	background: #FFF;
+	text-decoration: none;
+}
+
+
+/* formatações gerais */
+
+h1 {
+	color: white;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+h2 {
+	color: #6635e8;
+}
+
+h3 {
+	color: #6635e8;
+	background: #CCC;
+	padding: 5px;
+}
+
+
+body#home #area-menu a#home,
+body#historia #area-menu a#historia,
+body#jogadores #area-menu a#jogadores,
+body#estatisticas #area-menu a#estatisticas,
+body#sejasocio #area-menu a#sejasocio
+ {
+	background: blue;
+	cursor: text;
+}
+
+/* Rodapé
+-----------------------------*/
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+footer h4 {
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+	color: white;
+	font-size: 0.8em;
+}
+
+footer .navbar-nav a:hover {
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	float: right;
+	margin: 0 5px;
+}
+
+
+
+
+/* JOGADORES 
+-----------------------------------------------------------------------------*/
+ .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .bloco {
+      width: 23%; /* 100% / 4 - Margem */
+      margin-bottom: 10px;
+      border: 10px solid #black;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color:#B0E0E6;
+      font-family: 'Sans-Serif' 'Verdana';
+     font-weight: 100;
+     text-align: center;
+    }
+
+   img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .destaque {
+      font-weight: bold;
+      font-size: 1.2em; /* Ajuste o tamanho conforme necessário */
+    }
+
+
+    /* HISTÓRIA 
+-----------------------------------------------------------------------------*/
+
+#home {
+	background: #ffc107;
+	color: white;
+}
+
+.caixa2 {
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+#navegacao .navbar-dark .navbar-nav .nav-link {
+	color: green !important;
+}
+
+#navegacao .navbar-dark .navbar-nav .nav-link:hover {
+	color: green !important;
+}
+
+#navegacao .navbar-dark .navbar-toggler {
+	color: rgba(255,255,255,.5);
+	border-color: rgba(255,255,255,.1);
+}
